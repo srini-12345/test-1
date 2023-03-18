@@ -30,7 +30,15 @@ stages:
     displayName: Build
     pool:
       vmImage: $(vmImageName)
+    variables:
+      Position.Title: srinivas
     steps:
+    - task: FileTransform@2
+      displayName: 'File transformation: appsettings.json'
+      inputs:
+        folderPath: '$(System.DefaultWorkingDirectory)'
+        targetFiles: '**/appsettings.json'
+        fileType: json
     - task: Docker@2
       displayName: Build and push an image to container registry
       inputs:
@@ -47,8 +55,6 @@ stages:
 - stage: Deploy
   displayName: Deploy stage
   dependsOn: Build
-  variables:
-    Position.Title: srinivas
   jobs:
   - deployment: Deploy
     displayName: Deploy
@@ -59,12 +65,7 @@ stages:
       runOnce:
         deploy:
           steps:
-          - task: FileTransform@1
-            displayName: 'File transformation: appsettings.json'
-            inputs:
-              folderPath: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-              targetFiles: '**/appsettings.json'
-              fileType: json
+
           - task: KubernetesManifest@0
             displayName: Create imagePullSecret
             inputs:
