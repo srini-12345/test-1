@@ -1,0 +1,21 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = dotnetAKS
+build_property.RootNamespace = dotnetAKS
+build_property.ProjectDir = /Users/ayanbanerjee/Documents/My_Docs/My_Jobs/01_Freelancing/01_Srini_UK_11Mar2023/SampleAKSApp/dotnetAKS/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/ayanbanerjee/Documents/My_Docs/My_Jobs/01_Freelancing/01_Srini_UK_11Mar2023/SampleAKSApp/dotnetAKS
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/ayanbanerjee/Documents/My_Docs/My_Jobs/01_Freelancing/01_Srini_UK_11Mar2023/SampleAKSApp/dotnetAKS/Pages/Test22.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGVzdDIyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

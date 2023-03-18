@@ -1,0 +1,9 @@
+/Users/ayanbanerjee/Documents/My_Docs/My_Jobs/01_Freelancing/01_Srini_UK_11Mar2023/SampleAKSApp/dotnetAKS/obj/Debug/net7.0/dotnetAKS.csproj.AssemblyReference.cache
+/Users/ayanbanerjee/Documents/My_Docs/My_Jobs/01_Freelancing/01_Srini_UK_11Mar2023/SampleAKSApp/dotnetAKS/obj/Debug/net7.0/dotnetAKS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ayanbanerjee/Documents/My_Docs/My_Jobs/01_Freelancing/01_Srini_UK_11Mar2023/SampleAKSApp/dotnetAKS/obj/Debug/net7.0/dotnetAKS.AssemblyInfoInputs.cache
+/Users/ayanbanerjee/Documents/My_Docs/My_Jobs/01_Freelancing/01_Srini_UK_11Mar2023/SampleAKSApp/dotnetAKS/obj/Debug/net7.0/dotnetAKS.AssemblyInfo.cs
+/Users/ayanbanerjee/Documents/My_Docs/My_Jobs/01_Freelancing/01_Srini_UK_11Mar2023/SampleAKSApp/dotnetAKS/obj/Debug/net7.0/dotnetAKS.csproj.CoreCompileInputs.cache
+/Users/ayanbanerjee/Documents/My_Docs/My_Jobs/01_Freelancing/01_Srini_UK_11Mar2023/SampleAKSApp/dotnetAKS/obj/Debug/net7.0/dotnetAKS.MvcApplicationPartsAssemblyInfo.cs
+/Users/ayanbanerjee/Documents/My_Docs/My_Jobs/01_Freelancing/01_Srini_UK_11Mar2023/SampleAKSApp/dotnetAKS/obj/Debug/net7.0/dotnetAKS.MvcApplicationPartsAssemblyInfo.cache
+/Users/ayanbanerjee/Documents/My_Docs/My_Jobs/01_Freelancing/01_Srini_UK_11Mar2023/SampleAKSApp/dotnetAKS/obj/Debug/net7.0/dotnetAKS.RazorAssemblyInfo.cache
+/Users/ayanbanerjee/Documents/My_Docs/My_Jobs/01_Freelancing/01_Srini_UK_11Mar2023/SampleAKSApp/dotnetAKS/obj/Debug/net7.0/dotnetAKS.RazorAssemblyInfo.cs
