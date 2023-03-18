@@ -33,7 +33,7 @@ stages:
     variables:
       Position.Title: srinivas
     steps:
-    - task: FileTransform@2
+    - task: FileTransform@1
       displayName: 'File transformation: appsettings.json'
       inputs:
         folderPath: '$(System.DefaultWorkingDirectory)'
