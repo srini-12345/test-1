@@ -47,7 +47,8 @@ stages:
 - stage: Deploy
   displayName: Deploy stage
   dependsOn: Build
-
+  variables:
+    Position.Title: srinivas
   jobs:
   - deployment: Deploy
     displayName: Deploy
@@ -58,6 +59,12 @@ stages:
       runOnce:
         deploy:
           steps:
+          - task: FileTransform@1
+            displayName: 'File transformation: appsettings.json'
+            inputs:
+              folderPath: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+              targetFiles: '**/appsettings.json'
+              fileType: json
           - task: KubernetesManifest@0
             displayName: Create imagePullSecret
             inputs:
