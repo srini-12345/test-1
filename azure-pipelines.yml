@@ -41,7 +41,7 @@ stages:
         tags: |
           $(tag)
 
-    - upload: test-1\manifests
+    - upload: manifests
       artifact: manifests
 
 - stage: Deploy
