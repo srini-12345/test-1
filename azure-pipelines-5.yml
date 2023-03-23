@@ -52,7 +52,7 @@ stages:
         archiveType: 'zip'
         archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
         replaceExistingArchive: true
-    - task: FileTransform@1
+    - task: FileTransform@2
       inputs:
         folderPath: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
         fileType: 'json'
