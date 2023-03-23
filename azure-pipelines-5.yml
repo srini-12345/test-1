@@ -52,17 +52,9 @@ stages:
         archiveType: 'zip'
         archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
         replaceExistingArchive: true
-    - task: PublishPipelineArtifact@1
-      inputs:
-        targetPath: '$(Pipeline.Workspace)'
-        artifact: 'manifests'
-        publishLocation: 'pipeline'
-    - upload: manifests
-      artifact: manifests
-    
     - task: FileTransform@1
       inputs:
-        folderPath: '$(System.DefaultWorkingDirectory)/**/*.zip'
+        folderPath: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
         fileType: 'json'
         targetFiles: 'appsettings.json'
 - stage: Deploy
