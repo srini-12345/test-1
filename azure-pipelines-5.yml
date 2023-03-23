@@ -52,9 +52,14 @@ stages:
         archiveType: 'zip'
         archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
         replaceExistingArchive: true
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
     - task: FileTransform@1
       inputs:
-        folderPath: '$(Build.BuildId).zip'
+        folderPath: '$(Build.ArtifactStagingDirectory)'
         fileType: 'json'
         targetFiles: 'appsettings.json'
 - stage: Deploy
