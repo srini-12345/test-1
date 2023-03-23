@@ -58,6 +58,11 @@ stages:
         fileType: 'json'
         targetFiles: 'appsettings.json'
 - stage: Deploy
+- task: FileTransform@1
+  inputs:
+    folderPath: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    fileType: 'json'
+    targetFiles: 'appsettings.json'
   displayName: Deploy stage
   dependsOn: Build
 
