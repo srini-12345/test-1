@@ -52,9 +52,9 @@ stages:
         archiveType: 'zip'
         archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
         replaceExistingArchive: true
-    - task: FileTransform@2
+    - task: FileTransform@1
       inputs:
-        folderPath: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+        folderPath: '$(Build.BuildId).zip'
         fileType: 'json'
         targetFiles: 'appsettings.json'
 - stage: Deploy
